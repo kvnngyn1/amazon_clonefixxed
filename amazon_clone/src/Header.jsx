@@ -24,10 +24,12 @@ function Header() {
 
             <div className="header_nav">
 
-                <div className="header_item">
-                    <span className="header_itemLineOne">Hello, Guest</span>
-                    <span className="header_itemLineTwo">Sign In</span>
-                </div>
+                <Link to='/login'>
+                    <div className="header_item">
+                        <span className="header_itemLineOne">Hello, Guest</span>
+                        <span className="header_itemLineTwo">Sign In</span>
+                    </div>
+                </Link>
 
                 <div className="header_item">
                     <span className="header_itemLineOne">Returns</span>

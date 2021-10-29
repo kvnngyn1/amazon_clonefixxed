@@ -9,15 +9,14 @@ export const getCartTotal = (cart) =>
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
-
-        case 'ADD_TO_CART':
+        case "ADD_TO_CART":
             return {
                 ...state,
                 cart: [...state.cart, action.item],
             };
 
-        case 'REMOVE_FROM_CART':
-            const index = state.basket.findIndex(
+        case "REMOVE_FROM_CART":
+            const index = state.cart.findIndex(
                 (cartItem) => cartItem.id === action.id
             );
             
@@ -25,9 +24,10 @@ const reducer = (state, action) => {
 
             if (index >= 0) {
                 newCart.splice(index, 1);
+
             } else {
                 console.warn(
-                    "Can't remove product ()id: ${action.id} as it's not in cart!"
+                    "Can't remove product (id: ${action.id}) as it's not in cart!"
                 )
             }
 

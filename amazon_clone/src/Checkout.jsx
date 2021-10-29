@@ -19,21 +19,7 @@ function Checkout() {
                     <h2>Your Shopping Cart</h2>
 
                     {/* render shopping items here */}
-                    <CheckoutProduct
-                        id='1234'
-                        title='Cracking the Coding Interview: 189 Programming Questions and Solutions'
-                        image='https://images-na.ssl-images-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg'
-                        price='24.49'
-                        rating={5}
-                    />
-                    <CheckoutProduct
-                        id='1234'
-                        title='Cracking the Coding Interview: 189 Programming Questions and Solutions'
-                        image='https://images-na.ssl-images-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg'
-                        price='24.49'
-                        rating={5}
-                    />
-                    {/* {cart.map(item => (
+                    {cart.map(item => (
                         <CheckoutProduct 
                             id={item.id}
                             title={item.title}
@@ -41,9 +27,8 @@ function Checkout() {
                             price={item.price}
                             rating={item.rating}
                         />
-                    ))} */}
+                    ))}
                 </div>
-
             </div>
 
             <div className="checkout_continue">
