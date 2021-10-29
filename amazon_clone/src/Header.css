@@ -1,0 +1,84 @@
+/* NAVBAR */
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+/* tweak container to center items in it */
+
+.header_search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px 0px 0px 24px;
+}
+
+/* stretch search bar and match height  */
+
+.header_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header_searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/* differentiate between stacked items */
+
+.header_itemLineOne {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.header_itemLineTwo {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_itemCart {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: white;
+}
+
+.header_cartCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* put items side by side in navbar */
+
+.header_nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* orient line items stacked and white color text */
+
+.header_item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
